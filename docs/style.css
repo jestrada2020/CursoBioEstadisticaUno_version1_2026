@@ -1,0 +1,9 @@
+/* Estilos personalizados */
+
+.book .book-body .page-wrapper .page-inner {
+  max-width: 900px;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
