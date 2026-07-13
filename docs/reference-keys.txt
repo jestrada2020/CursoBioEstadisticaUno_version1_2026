@@ -1,4 +1,13 @@
 tab:tabla-frecuencias
+tab:resumen-no-agrupados
+tab:tabla-datos-agrupados
+tab:resumen-datos-agrupados
+tab:tabla-datos-par-original
+tab:resumen-par
+tab:tabla-boxplot-par
+tab:tabla-datos-impar-original
+tab:resumen-impar
+tab:tabla-boxplot-impar
 introducción
 julio-2026
 temas-primer-parcial
@@ -21,6 +30,10 @@ gráfica-caja-y-bigotes
 media-mediana-y-moda
 varianza-y-desviación-estándar
 coeficiente-de-variación
+datos-no-agrupados
+datos-agrupados
+datos-no-agrupados-con-número-par-de-datos
+datos-no-agrupados-con-número-impar-de-datos
 práctica-de-código-r-en-línea
 agosto-2026
 septiembre-2026
