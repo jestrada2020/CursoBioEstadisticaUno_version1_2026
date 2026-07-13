@@ -25,6 +25,7 @@ qué-es-un-dato
 qué-es-una-unidad-de-observación
 qué-es-una-población
 qué-es-una-muestra
+videos-complementarios
 conceptos-de-estadística-descriptiva
 qué-es-la-estadística-descriptiva
 tablas-de-frecuencia
