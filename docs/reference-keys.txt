@@ -9,6 +9,9 @@ tab:tabla-datos-impar-original
 tab:resumen-impar
 tab:tabla-boxplot-impar
 introducción
+comportamentales
+evaluativos
+objetivos-específicos
 julio-2026
 temas-primer-parcial
 calendario
