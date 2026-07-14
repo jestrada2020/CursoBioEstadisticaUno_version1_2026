@@ -35,6 +35,7 @@ media-mediana-y-moda
 varianza-y-desviación-estándar
 coeficiente-de-variación
 datos-no-agrupados
+videos-datos-no-agrupados
 datos-agrupados
 datos-no-agrupados-con-número-par-de-datos
 datos-no-agrupados-con-número-impar-de-datos
