@@ -144,7 +144,7 @@ window.addEventListener('load', function() {
     let el = button.parentElement.parentElement.parentElement;
     while (el) {
       if (
-        el.tagName === "SECTION"
+        el.classList
         && el.classList.contains("tab")
         && !el.classList.contains("active")
       ) {
