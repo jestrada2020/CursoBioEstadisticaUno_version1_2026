@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 Manejo de la Calculadora Casio | Curso de Bioestadística Uno - Parte Uno</title>
+  <meta name="description" content="Calendario académico del segundo semestre de 2026 para el Curso de Bioestadística Uno." />
+  <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 Manejo de la Calculadora Casio | Curso de Bioestadística Uno - Parte Uno" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Calendario académico del segundo semestre de 2026 para el Curso de Bioestadística Uno." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 Manejo de la Calculadora Casio | Curso de Bioestadística Uno - Parte Uno" />
+  
+  <meta name="twitter:description" content="Calendario académico del segundo semestre de 2026 para el Curso de Bioestadística Uno." />
+  
+
+<meta name="author" content="John Jairo Estrada Álvarez" />
+
+
+<meta name="date" content="2026-07-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="octubre-2026.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<style type="text/css">
+.tabset>.tab {
+  display: none;
+  border: solid 1px #ddd;
+  padding: 15px;
+  border-radius: 0 0 4px 4px;
+}
+.tabset>.tab.active {
+  display: block;
+}
+.tabset>.tab>:first-child {
+  display: none;
+}
+.tabset>.tabmenu {
+  margin-bottom: 0;
+  padding: 0;
+  border-bottom: solid 1px #ddd;
+}
+.tabset>.tabmenu li {
+  display: inline-block;
+  margin: 0 2px 0 0;
+}
+.tabset>.tabmenu button {
+  text-decoration: none;
+  font-weight: normal;
+  background: #f7f7f7;
+  border: solid 1px #ddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.tabset>.tabmenu .active button {
+  text-decoration: none;
+  font-weight: bold;
+  background: #fff;
+}
+.tabset>.tabmenu .active button:before {
+  content: none;
+}
+</style>
+<script>
+window.addEventListener('load', function() {
+  let tabIds = [];
+
+  function toggle(elem, from, to) {
+    elem[from].classList.remove("active");
+    elem[to].classList.add("active");
+    return to;
+  }
+
+  function initialize(tabs) {
+    const active = tabs.findIndex(function(x) { return x.classList.contains("active"); });
+    tabs.forEach(function(x) {
+      tabIds.push(x.id);
+      x.dataset.id = x.id;
+      x.removeAttribute("id");
+      x.classList.add("tab");
+      x.classList.remove("active");
+    });
+    return toggle(tabs, 0, active > 0 ? active : 0);
+  }
+
+  Array.from(document.querySelectorAll(".section.tabset")).forEach(function(section) {
+    const tabs = Array.from(section.querySelectorAll(":scope>.section"));
+    if (tabs.length === 0) return;
+    let active = initialize(tabs);
+
+    const ul = section.insertBefore(document.createElement("ul"), tabs[0]);
+    ul.classList.add("tabmenu");
+    tabs.forEach(function(tab, current) {
+      const button = document.createElement("button");
+      ul.appendChild(document.createElement("li")).appendChild(button);
+      button.id = tab.dataset.id;
+      button.innerHTML = tab.children[0].innerHTML;
+      button.addEventListener("click", function() {
+        history.pushState(null, null, "#" + button.id);
+        toggle(tabs, active, current);
+        active = toggle(ul.children, active, current);
+      });
+    });
+    toggle(ul.children, 0, active);
+  });
+
+  function showHashTab() {
+    const buttonId = tabIds.find(function(x) { return ('#' + x) === location.hash; });
+    if (!buttonId) return;
+    const button = document.getElementById(buttonId);
+    if (!button) return;
+    let el = button.parentElement.parentElement.parentElement;
+    while (el) {
+      if (
+        el.tagName === "SECTION"
+        && el.classList.contains("tab")
+        && !el.classList.contains("active")
+      ) {
+        const parentButton = document.getElementById(el.dataset.id);
+        if (parentButton) parentButton.click();
+      }
+      el = el.parentElement;
+    }
+    button.click();
+    button.scrollIntoView();
+  }
+  showHashTab();
+  window.addEventListener("hashchange", showHashTab);
+});
+</script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Curso de Bioestadística Uno - Parte Uno</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>1.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>1.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#objetivos-espec%C3%ADficos"><i class="fa fa-check"></i><b>1.3</b> Objetivos específicos</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="julio-2026.html"><a href="julio-2026.html"><i class="fa fa-check"></i><b>2</b> Julio 2026</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="julio-2026.html"><a href="julio-2026.html#temas-primer-parcial"><i class="fa fa-check"></i><b>2.1</b> Temas primer parcial</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="julio-2026.html"><a href="julio-2026.html#calendario"><i class="fa fa-check"></i><b>2.1.1</b> Calendario</a></li>
+<li class="chapter" data-level="2.1.2" data-path="julio-2026.html"><a href="julio-2026.html#conceptos-introductorios"><i class="fa fa-check"></i><b>2.1.2</b> Conceptos introductorios</a></li>
+<li class="chapter" data-level="2.1.3" data-path="julio-2026.html"><a href="julio-2026.html#conceptos-de-estad%C3%ADstica-descriptiva"><i class="fa fa-check"></i><b>2.1.3</b> Conceptos de estadística descriptiva</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="agosto-2026.html"><a href="agosto-2026.html"><i class="fa fa-check"></i><b>3</b> Agosto 2026</a></li>
+<li class="chapter" data-level="4" data-path="septiembre-2026.html"><a href="septiembre-2026.html"><i class="fa fa-check"></i><b>4</b> Septiembre 2026</a></li>
+<li class="chapter" data-level="5" data-path="octubre-2026.html"><a href="octubre-2026.html"><i class="fa fa-check"></i><b>5</b> Octubre 2026</a></li>
+<li class="chapter" data-level="6" data-path="manejo-de-la-calculadora-casio.html"><a href="manejo-de-la-calculadora-casio.html"><i class="fa fa-check"></i><b>6</b> Manejo de la Calculadora Casio</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="manejo-de-la-calculadora-casio.html"><a href="manejo-de-la-calculadora-casio.html#modelos-de-calculadora"><i class="fa fa-check"></i><b>6.1</b> Modelos de calculadora</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="manejo-de-la-calculadora-casio.html"><a href="manejo-de-la-calculadora-casio.html#classwiz-lax-ex-fx-570lax-fx-991lax-fx-82lax"><i class="fa fa-check"></i><b>6.1.1</b> ClassWiz LAX / EX (fx-570LAX, fx-991LAX, fx-82LAX)</a></li>
+<li class="chapter" data-level="6.1.2" data-path="manejo-de-la-calculadora-casio.html"><a href="manejo-de-la-calculadora-casio.html#classwiz-cw-fx-570cw-fx-991cw-fx-82cw"><i class="fa fa-check"></i><b>6.1.2</b> ClassWiz CW (fx-570CW, fx-991CW, fx-82CW)</a></li>
+<li class="chapter" data-level="6.1.3" data-path="manejo-de-la-calculadora-casio.html"><a href="manejo-de-la-calculadora-casio.html#es-es-plus-fx-82es-fx-570es-fx-991es"><i class="fa fa-check"></i><b>6.1.3</b> ES / ES PLUS (fx-82ES, fx-570ES, fx-991ES)</a></li>
+<li class="chapter" data-level="6.1.4" data-path="manejo-de-la-calculadora-casio.html"><a href="manejo-de-la-calculadora-casio.html#ms-series-fx-82ms-fx-570ms-fx-991ms"><i class="fa fa-check"></i><b>6.1.4</b> MS Series (fx-82MS, fx-570MS, fx-991MS)</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado con bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso de Bioestadística Uno - Parte Uno</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="manejo-de-la-calculadora-casio" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> Manejo de la Calculadora Casio<a href="manejo-de-la-calculadora-casio.html#manejo-de-la-calculadora-casio" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>El uso de la calculadora científica es fundamental en el curso de Bioestadística para agilizar el cálculo de medidas de tendencia central y de dispersión. En esta pestaña aprenderás a configurar y utilizar los modelos de calculadora Casio más comunes para el procesamiento y análisis de datos en estadística descriptiva.</p>
+<p>Elige la pestaña correspondiente a la serie o modelo de tu calculadora para ver las instrucciones detalladas paso a paso y los videos tutoriales más claros y concretos.</p>
+<div id="modelos-de-calculadora" class="section level2 tabset hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Modelos de calculadora<a href="manejo-de-la-calculadora-casio.html#modelos-de-calculadora" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="classwiz-lax-ex-fx-570lax-fx-991lax-fx-82lax" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> ClassWiz LAX / EX (fx-570LAX, fx-991LAX, fx-82LAX)<a href="manejo-de-la-calculadora-casio.html#classwiz-lax-ex-fx-570lax-fx-991lax-fx-82lax" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Esta es la serie de calculadoras ClassWiz con menús en español más utilizada en la actualidad.</p>
+<div id="pasos-para-realizar-estadística-descriptiva-1-variable" class="section level4 hasAnchor" number="6.1.1.1">
+<h4><span class="header-section-number">6.1.1.1</span> <strong>Pasos para realizar estadística descriptiva (1 variable):</strong><a href="manejo-de-la-calculadora-casio.html#pasos-para-realizar-estad%C3%ADstica-descriptiva-1-variable" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li><strong>Activar columna de frecuencia (Opcional):</strong>
+Si vas a trabajar con datos agrupados o tablas de frecuencias, necesitas habilitar la columna de frecuencia:
+<ul>
+<li>Presiona <code>SHIFT</code> + <code>MENU</code> (Configuración).</li>
+<li>Desplázate hacia abajo con la flecha y presiona <code>3</code> (Estadística).</li>
+<li>Selecciona <code>1</code> (Encendido).</li>
+</ul></li>
+<li><strong>Entrar al modo estadístico:</strong>
+<ul>
+<li>Presiona la tecla <code>MENU</code>.</li>
+<li>Selecciona el icono de <strong>Estadística</strong> (suele ser el número <strong>6</strong>) y presiona <code>=</code> (o pulsa la tecla <code>6</code> directamente).</li>
+<li>Selecciona la opción <code>1: 1-Variable</code> (Estadística de una variable).</li>
+</ul></li>
+<li><strong>Ingresar los datos:</strong>
+<ul>
+<li>Aparecerá una tabla en pantalla con la columna <code>x</code> (y la columna <code>Freq</code> si la activaste en el paso 1).</li>
+<li>Introduce cada dato numérico y presiona <code>=</code> para confirmarlo y pasar al siguiente.</li>
+<li>Si tienes activada la frecuencia, puedes desplazarte lateralmente con las flechas para modificar la columna de frecuencia de cada valor.</li>
+</ul></li>
+<li><strong>Calcular los estadísticos:</strong>
+<ul>
+<li>Una vez que termines de ingresar todos tus datos, presiona la tecla <code>AC</code> para limpiar la pantalla de entrada (los datos permanecen en memoria).</li>
+<li>Presiona la tecla <code>OPTN</code> (Option, ubicada debajo de la pantalla).</li>
+<li>Selecciona la opción <code>3: Cálc 1-var</code> (Cálculo de una variable).</li>
+</ul></li>
+<li><strong>Interpretar los resultados:</strong>
+Aparecerá un listado completo con todos los resultados calculados al instante. Desplázate hacia abajo con las flechas para verlos todos:
+<ul>
+<li><span class="math inline">\(\bar{x}\)</span>: Media aritmética.</li>
+<li><span class="math inline">\(\sum x\)</span>: Sumatoria de los datos.</li>
+<li><span class="math inline">\(\sum x^2\)</span>: Sumatoria de los datos al cuadrado.</li>
+<li><span class="math inline">\(\sigma^2_x\)</span>: Varianza poblacional.</li>
+<li><span class="math inline">\(\sigma_x\)</span>: Desviación estándar poblacional.</li>
+<li><strong><span class="math inline">\(s^2_x\)</span></strong>: Varianza muestral (<em>usar esta en bioestadística para muestras</em>).</li>
+<li><strong><span class="math inline">\(s_x\)</span></strong>: Desviación estándar muestral (<em>usar esta en bioestadística para muestras</em>).</li>
+<li><span class="math inline">\(n\)</span>: Número total de observaciones.</li>
+<li><span class="math inline">\(min(X)\)</span>: Valor mínimo.</li>
+<li><span class="math inline">\(Q_1\)</span>: Primer cuartil.</li>
+<li><span class="math inline">\(Med\)</span>: Mediana (segundo cuartil).</li>
+<li><span class="math inline">\(Q_3\)</span>: Tercer cuartil.</li>
+<li><span class="math inline">\(max(X)\)</span>: Valor máximo.</li>
+</ul></li>
+</ol>
+<hr />
+</div>
+<div id="videos-recomendados-para-la-serie-classwiz-lax-ex" class="section level4 hasAnchor" number="6.1.1.2">
+<h4><span class="header-section-number">6.1.1.2</span> <strong>Videos recomendados para la serie ClassWiz LAX / EX:</strong><a href="manejo-de-la-calculadora-casio.html#videos-recomendados-para-la-serie-classwiz-lax-ex" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<table style="width:100%; border-collapse: collapse;">
+<tr>
+<td style="width:50%; padding:10px; text-align:center;">
+<p style="font-weight: bold; margin-bottom: 5px;">
+Introducción y Cálculos Básicos
+</p>
+<div style="position:relative; padding-top:56.25%; width:100%; border-radius:0.75rem; overflow:hidden; background:#000;">
+<iframe src="https://www.youtube-nocookie.com/embed/R32msI__Yg8" title="Tutorial Casio ClassWiz LAX Estadística" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;">
+</iframe>
+</div>
+<p style="margin-top: 10px; font-size: 0.9em;">
+<a href="https://www.youtube.com/watch?v=R32msI__Yg8" target="_blank" rel="noopener">📺 Ver video directo en YouTube</a>
+</p>
+</td>
+<td style="width:50%; padding:10px; text-align:center;">
+<p style="font-weight: bold; margin-bottom: 5px;">
+Estadística y Frecuencias (Profe Danny)
+</p>
+<div style="position:relative; padding-top:56.25%; width:100%; border-radius:0.75rem; overflow:hidden; background:#000;">
+<iframe src="https://www.youtube-nocookie.com/embed/n-q1Qy4yX8A" title="Casio ClassWiz Frecuencias" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;">
+</iframe>
+</div>
+<p style="margin-top: 10px; font-size: 0.9em;">
+<a href="https://www.youtube.com/watch?v=n-q1Qy4yX8A" target="_blank" rel="noopener">📺 Ver video directo en YouTube</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="classwiz-cw-fx-570cw-fx-991cw-fx-82cw" class="section level3 hasAnchor" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> ClassWiz CW (fx-570CW, fx-991CW, fx-82CW)<a href="manejo-de-la-calculadora-casio.html#classwiz-cw-fx-570cw-fx-991cw-fx-82cw" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Esta es la nueva línea de Casio que rediseñó por completo los botones y la estructura de menús para simplificar la navegación (reemplaza a la serie LAX/EX).</p>
+<div id="pasos-para-realizar-estadística-descriptiva-1-variable-1" class="section level4 hasAnchor" number="6.1.2.1">
+<h4><span class="header-section-number">6.1.2.1</span> <strong>Pasos para realizar estadística descriptiva (1 variable):</strong><a href="manejo-de-la-calculadora-casio.html#pasos-para-realizar-estad%C3%ADstica-descriptiva-1-variable-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li><strong>Activar columna de frecuencia (Opcional):</strong>
+<ul>
+<li>Presiona <code>SHIFT</code> + <code>HOME</code> (Configuración / tecla de engranaje).</li>
+<li>Selecciona <code>Ajustes de calculadora</code> (Calc Settings) y presiona <code>OK</code>.</li>
+<li>Selecciona <code>Estadística</code> (Statistics) y presiona <code>OK</code>.</li>
+<li>Selecciona <code>Frecuencia</code> (Frequency) -&gt; <code>Encendido</code> (On) y presiona <code>OK</code>.</li>
+<li>Presiona <code>AC</code> para salir.</li>
+</ul></li>
+<li><strong>Entrar al modo estadístico:</strong>
+<ul>
+<li>Presiona la tecla <code>HOME</code> (Menú de inicio).</li>
+<li>Desplázate con el cursor hasta el icono de <strong>Estadística</strong> (Statistics) y presiona <code>OK</code>.</li>
+<li>Selecciona <code>1-Variable</code> y presiona <code>OK</code>.</li>
+</ul></li>
+<li><strong>Ingresar los datos:</strong>
+<ul>
+<li>Introduce el primer dato y presiona <code>EXE</code> para confirmarlo.</li>
+<li>Si tienes activada la frecuencia, introduce los valores en la columna <code>x</code> y luego muévete a la derecha para especificar la frecuencia correspondiente.</li>
+</ul></li>
+<li><strong>Calcular los estadísticos:</strong>
+<ul>
+<li>Tras ingresar los datos, presiona <code>AC</code>.</li>
+<li>Presiona la tecla <code>OK</code> (o en su defecto presiona <code>EXE</code> en pantalla sobre la opción de cálculo) y selecciona <strong>1-Var Results</strong> (Resultados de 1 variable).</li>
+</ul></li>
+<li><strong>Resultados en pantalla:</strong>
+Usa las flechas para navegar en la lista de resultados estadísticos. Encontrarás:
+<ul>
+<li><span class="math inline">\(\bar{x}\)</span>: Media.</li>
+<li><span class="math inline">\(\sum x\)</span> y <span class="math inline">\(\sum x^2\)</span>: Sumatorias.</li>
+<li><span class="math inline">\(\sigma_x\)</span> y <span class="math inline">\(\sigma^2_x\)</span>: Parámetros poblacionales.</li>
+<li><strong><span class="math inline">\(s_x\)</span></strong>: Desviación estándar muestral.</li>
+<li><strong><span class="math inline">\(s^2_x\)</span></strong>: Varianza muestral.</li>
+<li><span class="math inline">\(n\)</span>: Número total de datos.</li>
+<li><span class="math inline">\(min(X)\)</span>, <span class="math inline">\(Q_1\)</span>, <span class="math inline">\(Med\)</span>, <span class="math inline">\(Q_3\)</span>, <span class="math inline">\(max(X)\)</span>: Resumen de los 5 puntos (caja y bigotes).</li>
+</ul></li>
+</ol>
+<hr />
+</div>
+<div id="video-recomendado-para-la-serie-classwiz-cw" class="section level4 hasAnchor" number="6.1.2.2">
+<h4><span class="header-section-number">6.1.2.2</span> <strong>Video recomendado para la serie ClassWiz CW:</strong><a href="manejo-de-la-calculadora-casio.html#video-recomendado-para-la-serie-classwiz-cw" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<table style="width:100%; border-collapse: collapse;">
+<tr>
+<td style="width:100%; padding:10px; text-align:center;">
+<p style="font-weight: bold; margin-bottom: 5px;">
+Cálculos de Estadística y Dispersión en Casio CW
+</p>
+<div style="position:relative; padding-top:56.25%; max-width:640px; margin: 0 auto; border-radius:0.75rem; overflow:hidden; background:#000;">
+<iframe src="https://www.youtube-nocookie.com/embed/EnqhRYPix0E" title="Tutorial Casio CW Estadística" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;">
+</iframe>
+</div>
+<p style="margin-top: 10px; font-size: 0.9em;">
+<a href="https://www.youtube.com/watch?v=EnqhRYPix0E" target="_blank" rel="noopener">📺 Ver video directo en YouTube</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="es-es-plus-fx-82es-fx-570es-fx-991es" class="section level3 hasAnchor" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> ES / ES PLUS (fx-82ES, fx-570ES, fx-991ES)<a href="manejo-de-la-calculadora-casio.html#es-es-plus-fx-82es-fx-570es-fx-991es" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Esta serie, conocida por su “Natural Display” (pantalla de escritura natural), es extremadamente común en las aulas.</p>
+<div id="pasos-para-realizar-estadística-descriptiva-1-variable-2" class="section level4 hasAnchor" number="6.1.3.1">
+<h4><span class="header-section-number">6.1.3.1</span> <strong>Pasos para realizar estadística descriptiva (1 variable):</strong><a href="manejo-de-la-calculadora-casio.html#pasos-para-realizar-estad%C3%ADstica-descriptiva-1-variable-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li><strong>Activar columna de frecuencia (Opcional):</strong>
+<ul>
+<li>Presiona <code>SHIFT</code> + <code>MODE</code> (SETUP).</li>
+<li>Desplázate hacia abajo con la flecha de navegación.</li>
+<li>Presiona el número <code>4</code> (STAT).</li>
+<li>Presiona <code>1</code> (ON) para activar la frecuencia.</li>
+</ul></li>
+<li><strong>Entrar al modo estadístico:</strong>
+<ul>
+<li>Presiona la tecla <code>MODE</code>.</li>
+<li>Selecciona la opción <code>3</code> (STAT) o la que corresponda en tu modelo.</li>
+<li>Selecciona <code>1</code> (1-VAR) para una sola variable.</li>
+</ul></li>
+<li><strong>Ingresar los datos:</strong>
+<ul>
+<li>Escribe el dato en la columna <code>X</code> y presiona <code>=</code> para ingresarlo.</li>
+<li>Ingresa las frecuencias en la columna <code>FREQ</code> de la misma manera si la habilitaste en el paso 1.</li>
+</ul></li>
+<li><strong>Calcular los estadísticos:</strong>
+<ul>
+<li>Presiona la tecla <code>AC</code> para ir al modo de cálculo (los datos se guardan en la memoria).</li>
+<li>Presiona <code>SHIFT</code> + <code>1</code> (para activar el menú STAT).</li>
+<li>Selecciona la opción <code>4</code> (VAR) o la correspondiente en tu modelo.</li>
+<li>En el menú resultante podrás elegir el parámetro a calcular:
+<ul>
+<li><code>1: n</code>: Número total de datos.</li>
+<li><code>2: \bar{x}</code>: Media aritmética (selecciona 2 y presiona <code>=</code>).</li>
+<li><code>3: x\sigma n</code> (o <span class="math inline">\(\sigma_x\)</span>): Desviación estándar poblacional.</li>
+<li><strong><code>4: x\sigma n-1</code> (o <span class="math inline">\(s_x\)</span> / <span class="math inline">\(x\sigma x\)</span>)</strong>: Desviación estándar muestral (<em>selecciona 4 y presiona <code>=</code></em>).</li>
+</ul></li>
+<li><strong>Para calcular la Varianza Muestral (<span class="math inline">\(s^2\)</span>):</strong> Primero calcula la desviación estándar muestral (<code>4: x\sigma n-1</code>), luego presiona la tecla de elevar al cuadrado (<span class="math inline">\(x^2\)</span>) y presiona <code>=</code>.</li>
+</ul></li>
+</ol>
+<hr />
+</div>
+<div id="videos-recomendados-para-la-serie-es-es-plus" class="section level4 hasAnchor" number="6.1.3.2">
+<h4><span class="header-section-number">6.1.3.2</span> <strong>Videos recomendados para la serie ES / ES PLUS:</strong><a href="manejo-de-la-calculadora-casio.html#videos-recomendados-para-la-serie-es-es-plus" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<table style="width:100%; border-collapse: collapse;">
+<tr>
+<td style="width:50%; padding:10px; text-align:center;">
+<p style="font-weight: bold; margin-bottom: 5px;">
+Datos Simples (Andrés Arcos)
+</p>
+<div style="position:relative; padding-top:56.25%; width:100%; border-radius:0.75rem; overflow:hidden; background:#000;">
+<iframe src="https://www.youtube-nocookie.com/embed/kYJm1s0C52o" title="Casio ES PLUS Datos Simples" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;">
+</iframe>
+</div>
+<p style="margin-top: 10px; font-size: 0.9em;">
+<a href="https://www.youtube.com/watch?v=kYJm1s0C52o" target="_blank" rel="noopener">📺 Ver video directo en YouTube</a>
+</p>
+</td>
+<td style="width:50%; padding:10px; text-align:center;">
+<p style="font-weight: bold; margin-bottom: 5px;">
+Con Tablas de Frecuencia (Andrés Arcos)
+</p>
+<div style="position:relative; padding-top:56.25%; width:100%; border-radius:0.75rem; overflow:hidden; background:#000;">
+<iframe src="https://www.youtube-nocookie.com/embed/y91_Tj7w-1w" title="Casio ES PLUS Tablas Frecuencia" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;">
+</iframe>
+</div>
+<p style="margin-top: 10px; font-size: 0.9em;">
+<a href="https://www.youtube.com/watch?v=y91_Tj7w-1w" target="_blank" rel="noopener">📺 Ver video directo en YouTube</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="ms-series-fx-82ms-fx-570ms-fx-991ms" class="section level3 hasAnchor" number="6.1.4">
+<h3><span class="header-section-number">6.1.4</span> MS Series (fx-82MS, fx-570MS, fx-991MS)<a href="manejo-de-la-calculadora-casio.html#ms-series-fx-82ms-fx-570ms-fx-991ms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Esta es la serie clásica con pantalla de dos líneas. Es un modelo robusto que ha estado en el mercado por muchos años.</p>
+<div id="pasos-para-realizar-estadística-descriptiva-1-variable-3" class="section level4 hasAnchor" number="6.1.4.1">
+<h4><span class="header-section-number">6.1.4.1</span> <strong>Pasos para realizar estadística descriptiva (1 variable):</strong><a href="manejo-de-la-calculadora-casio.html#pasos-para-realizar-estad%C3%ADstica-descriptiva-1-variable-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li><strong>Limpiar memoria estadística previa (¡MUY IMPORTANTE!):</strong>
+<ul>
+<li>Presiona <code>SHIFT</code> + <code>MODE</code> (CLR).</li>
+<li>Selecciona <code>1</code> (Scl) para limpiar la memoria de estadística (o <code>3</code> para limpiar todo, “All”).</li>
+<li>Presiona <code>=</code> para confirmar y luego <code>AC</code>.</li>
+</ul></li>
+<li><strong>Entrar al modo estadístico:</strong>
+<ul>
+<li>Presiona la tecla <code>MODE</code> una o dos veces hasta que aparezcan las opciones <code>SD</code>, <code>REG</code>, <code>BASE</code>.</li>
+<li>Presiona el número <code>1</code> (para seleccionar <strong>SD</strong>, Desviación Estándar). En la pantalla aparecerá una pequeña marca “SD”.</li>
+</ul></li>
+<li><strong>Ingresar los datos:</strong>
+<ul>
+<li><strong>Datos simples:</strong> Escribe el valor numérico y presiona la tecla <code>M+</code> (que actúa como <code>DT</code> en este modo). La pantalla mostrará <code>n=1</code>, <code>n=2</code>, etc.</li>
+<li><strong>Datos repetidos (con frecuencia):</strong> Escribe el valor, presiona <code>SHIFT</code> + <code>,</code> (para colocar punto y coma <code>;</code>), escribe la frecuencia (cuántas veces se repite) y presiona la tecla <code>M+</code>. Por ejemplo, para ingresar el número 5 con frecuencia 3, tecleas: <code>5</code> <span class="math inline">\(\rightarrow\)</span> <code>SHIFT</code> <span class="math inline">\(\rightarrow\)</span> <code>,</code> <span class="math inline">\(\rightarrow\)</span> <code>3</code> <span class="math inline">\(\rightarrow\)</span> <code>M+</code>.</li>
+</ul></li>
+<li><strong>Obtener resultados:</strong>
+<ul>
+<li><strong>Media aritmética (<span class="math inline">\(\bar{x}\)</span>):</strong>
+<ul>
+<li>Presiona <code>SHIFT</code> + <code>2</code> (S-VAR).</li>
+<li>Selecciona <code>1</code> (para <span class="math inline">\(\bar{x}\)</span>) y presiona <code>=</code>.</li>
+</ul></li>
+<li><strong>Desviación estándar muestral (<span class="math inline">\(s_x\)</span>):</strong>
+<ul>
+<li>Presiona <code>SHIFT</code> + <code>2</code> (S-VAR).</li>
+<li>Selecciona <code>3</code> (para <span class="math inline">\(x\sigma n-1\)</span> o <span class="math inline">\(s_x\)</span>) y presiona <code>=</code>.</li>
+</ul></li>
+<li><strong>Varianza Muestral (<span class="math inline">\(s^2\)</span>):</strong>
+<ul>
+<li>Con la desviación estándar mostrada en pantalla, presiona la tecla <span class="math inline">\(x^2\)</span> (elevar al cuadrado) y presiona <code>=</code>.</li>
+</ul></li>
+<li><strong>Sumatorias e información adicional:</strong>
+<ul>
+<li>Presiona <code>SHIFT</code> + <code>1</code> (S-SUM) para obtener <span class="math inline">\(\sum x^2\)</span> (opción 1), <span class="math inline">\(\sum x\)</span> (opción 2) y <span class="math inline">\(n\)</span> (opción 3).</li>
+</ul></li>
+</ul></li>
+</ol>
+<hr />
+</div>
+<div id="video-recomendado-para-la-serie-ms" class="section level4 hasAnchor" number="6.1.4.2">
+<h4><span class="header-section-number">6.1.4.2</span> <strong>Video recomendado para la serie MS:</strong><a href="manejo-de-la-calculadora-casio.html#video-recomendado-para-la-serie-ms" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<table style="width:100%; border-collapse: collapse;">
+<tr>
+<td style="width:100%; padding:10px; text-align:center;">
+<p style="font-weight: bold; margin-bottom: 5px;">
+Estadística y Desviación Estándar en la serie Casio MS (Andrés Arcos)
+</p>
+<div style="position:relative; padding-top:56.25%; max-width:640px; margin: 0 auto; border-radius:0.75rem; overflow:hidden; background:#000;">
+<iframe src="https://www.youtube-nocookie.com/embed/kYJ7x3-D1aM" title="Tutorial Casio MS Estadística" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;">
+</iframe>
+</div>
+<p style="margin-top: 10px; font-size: 0.9em;">
+<a href="https://www.youtube.com/watch?v=kYJ7x3-D1aM" target="_blank" rel="noopener">📺 Ver video directo en YouTube</a>
+</p>
+</td>
+</tr>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="octubre-2026.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
