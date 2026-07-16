@@ -12,6 +12,7 @@ introducción
 comportamentales
 evaluativos
 objetivos-específicos
+pdf-temas-a-desarrollar
 julio-2026
 temas-primer-parcial
 calendario
@@ -40,6 +41,8 @@ datos-agrupados
 datos-no-agrupados-con-número-par-de-datos
 datos-no-agrupados-con-número-impar-de-datos
 práctica-de-código-r-en-línea
+ejemplos-realizados
+ejercicios-propuestos-complementarios
 agosto-2026
 septiembre-2026
 octubre-2026
